@@ -74,5 +74,40 @@
                 </VerticalStackLayout>
             </Grid>
         </Frame>
+
+        <Grid Grid.Row="1"
+              Margin="0,15,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".3*"></ColumnDefinition>
+                <ColumnDefinition Width=".7*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label Text="Enter Your Bill: $:"
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center"></Label>
+            <Entry x:Name="txtBill"
+                   Grid.Column="1"
+                   BackgroundColor="{StaticResource SectionColor}"
+                   Keyboard="Numeric"
+                   Text="0.0"
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center">
+            </Entry>
+
+            <Label Grid.Row="1"
+                   Text="Choose your tip"
+                   TextColor="{StaticResource LightFont}"></Label>
+        </Grid>
+        
     </Grid>
+    
+    
+    
 </ContentPage>
