@@ -103,7 +103,62 @@
 
             <Label Grid.Row="1"
                    Text="Choose your tip"
-                   TextColor="{StaticResource LightFont}"></Label>
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center"></Label>
+            <HorizontalStackLayout
+                Grid.Row="1"
+                Grid.Column="1"
+                HeightRequest="70"
+                HorizontalOptions="CenterAndExpand"
+                Spacing="10">
+                <Button Text="10%" WidthRequest="70"></Button>
+                <Button Text="15%" WidthRequest="70"></Button>
+                <Button Text="20%" WidthRequest="70"></Button>
+            </HorizontalStackLayout>
+            <Label
+                x:Name="lblTip"
+                Grid.Row="2"
+                Text="Tip: 0%"
+                TextColor="{StaticResource LightFont}"
+                VerticalOptions="Center"></Label>
+            <Slider
+                x:Name="sldTip"
+                Grid.Row="2"
+                Maximum="50"
+                Minimum="0">
+            </Slider>
+            <Label
+                Grid.Row="3"
+                Text="Split the Total"
+                TextColor="{StaticResource LightFont}"
+                VerticalOptions="Center"></Label>
+            <HorizontalStackLayout
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+                <Button x:Name="btnMinus"
+                        Text="-"
+                        WidthRequest="70"></Button>
+                <Label
+                    x:Name="lblNoPerons"
+                    Margin="-5,0,-5,0"
+                    BackgroundColor="{StaticResource SectionColor}"
+                    FontSize="25"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    Text="1"
+                    TextColor="{StaticResource LightFont}"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    WidthRequest="100"></Label>
+                <Button
+                    x:Name="btnPlus"
+                    Text="+"
+                    WidthRequest="70">
+                </Button>
+            </HorizontalStackLayout>
         </Grid>
         
     </Grid>
