@@ -124,6 +124,7 @@
             <Slider
                 x:Name="sldTip"
                 Grid.Row="2"
+                Grid.Column="1"
                 Maximum="50"
                 Minimum="0">
             </Slider>
